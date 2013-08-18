@@ -9,12 +9,12 @@ My Sublime Text 2 configuration.
 
 ### Font
 
-* Add [https://github.com/adobe/Source-Code-Pro](Source Code Pro) font
+* Add [Source Code Pro](https://github.com/adobe/Source-Code-Pro) font
 
 ### Symlink Installed Packages and User Settings
 
-In OSX, create these symlinks to same-name folders in this repo:
-
-* ~/Library/Application Support/Sublime Text 2/Installed Packages
+In OSX, create these symlinks to same-named folders in this repo:
 
 * ~/Library/Application Support/Sublime Text 2/Packages
+
+* ~/Library/Application Support/Sublime Text 2/Installed Packages
