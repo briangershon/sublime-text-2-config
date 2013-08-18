@@ -5,7 +5,7 @@ My Sublime Text 2 configuration.
 
 ## Installation
 
-* Install Sublime Text 2 and licence key
+* Install Sublime Text 2 and license key
 
 ### Font
 
