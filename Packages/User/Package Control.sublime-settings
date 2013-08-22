@@ -1,6 +1,14 @@
 {
 	"installed_packages":
 	[
-		"Package Control"
+		"Gist",
+		"Git",
+		"GitGutter",
+		"JavaScript Snippets",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"TrailingSpaces"
 	]
 }
