@@ -43,6 +43,10 @@ By default, GitGutter runs in the same thread which can block if it starts to pe
 #### Live Mode
 By default, GitGutter detects changes every time the file is modified. If you experience performance issues you can set it to only run on save by setting `live_mode` to `false`.
 
+
+#### Untracked Files
+You can toggle the setting `show_markers_on_untracked_file` to show special icons for untracked/ignored files. Defaults to false (shows no icons). If set to true you may want to add scopes to your color scheme (`markup.ignored.git_gutter` and `markup.untracked.git_gutter`) to color the icons.
+
 #### Git path
 If git is not in your PATH, you may need to set the `git_binary` setting to the location of the git binary, e.g. in a portable environment;
 ```js
@@ -72,7 +76,7 @@ To implement, use the <kbd>Project</kbd> > <kbd>Edit Project</kbd> menu and add 
 
 #### Icon Coloring
 
-The colors come from your *color scheme* **.tmTheme** file. If your color scheme file does not define the appropriate colors (or you want to edit them) add an entry that looks like this:
+The colors come from your *color scheme* **.tmTheme** file. I recommend installing the [sublime-monokai-extended](https://github.com/jonschlinkert/sublime-monokai-extended) color scheme which has all the appropriate colors for GitGutter. If your color scheme file does not define the appropriate colors (or you want to edit them) add an entry that looks like this:
 
 ```xml
 <dict>

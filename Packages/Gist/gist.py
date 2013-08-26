@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 import sublime
@@ -190,7 +189,7 @@ def open_gist(gist_url):
     files = sorted(gist['files'].keys())
 
     for gist_filename in files:
-        if gist['files'][gist_filename]['type'] != 'text/plain':
+        if gist['files'][gist_filename]['type'].split('/')[0] != 'text':
             continue
 
         view = sublime.active_window().new_file()
@@ -373,12 +372,12 @@ def api_request_curl(url, data=None, method=None):
         header_output_file.close()
         with named_tempfile() as data_file:
             if data is not None:
-                data_file.write(data)
+                data_file.write(bytes(data, 'utf8'))
                 data_file.close()
                 config.append('--data-binary "@%s"' % data_file.name)
 
             process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            response, _ = process.communicate('\n'.join(config))
+            response, _ = process.communicate(bytes('\n'.join(config), 'utf8'))
             returncode = process.returncode
 
             if returncode != 0:
