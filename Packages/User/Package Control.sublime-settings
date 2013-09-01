@@ -1,11 +1,13 @@
 {
 	"installed_packages":
 	[
+		"AngularJS",
 		"Gist",
 		"Git",
 		"GitGutter",
 		"JavaScript Snippets",
 		"JsFormat",
+		"Markdown Preview",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
