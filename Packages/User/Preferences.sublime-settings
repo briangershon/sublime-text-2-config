@@ -1,13 +1,11 @@
 {
 	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin, text.haml",
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"draw_white_space": "all",
 	"font_face": "Source Code Pro",
 	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
-	],
-	// Set to "none" to turn off drawing white space, "selection" to draw only the
-	// white space within the selection, and "all" to draw all white space
-	"draw_white_space": "all"
+	]
 }
