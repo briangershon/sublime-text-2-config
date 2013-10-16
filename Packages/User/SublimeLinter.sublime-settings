@@ -16,6 +16,7 @@
           "trailing": true,
           "indent": 2,
           "white": true,
-          "strict": false
+          "strict": false,
+          "es3": true
     }
 }
